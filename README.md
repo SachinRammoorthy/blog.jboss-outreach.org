@@ -3,19 +3,38 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/b2466651fc844fb2a262645ae7d1b117)](https://www.codacy.com/app/aashutoshrathi/blog.jboss-outreach.org?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=jboss-outreach/blog.jboss-outreach.org&amp;utm_campaign=Badge_Grade)
 
 
-This is a Jekyll blog. To maintain the blog, it's best you have Ruby installed.
-From within Ruby, install Jekyll and Rake too, as shown below.
+This is a Jekyll blog. To maintain the blog, you must have [Ruby](https://www.ruby-lang.org/en/) installed.
+Once Ruby is installed, install Jekyll and Rake too, as shown below.
 
 ```shell
 $ gem install jekyll
 $ gem install rake
 ```
-## Pull requests
+## Creating a Pull Request
 
-Please take reference of these 
-* Create your post under `_posts` dirertory, in `yyyy-mm-dd-title.md` format. 
-* [Posts](https://github.com/jboss-outreach/blog.jboss-outreach.org/tree/master/_posts)
-* [Pull requests](https://github.com/jboss-outreach/blog.jboss-outreach.org/pull/21)
+In order to publish your post, you must create a _Pull Request_.
+To do this, follow these steps:
+* _Fork_ this repository by clicking the button at the top-right corner of this page.
+* _Clone_ your forked repository to your computer. This means you are creating a local copy of it where you can edit files. You can do this through:
+```
+$ git clone https://github.com/[YOUR_USERNAME]/blog.jboss-outreach.org.git
+```
+where [YOUR_USERNAME] is your GitHub handle.
+
+* Make changes (add your blog) to your local copy. After this, run:
+```
+$ git add .
+$ git commit -m "DESCRIBE YOUR CHANGES"
+$ git push origin master
+```
+If you want to add only specific files, you can run `$ git add path/to/your/file` where `path/to/your/file` is the path to your file.
+If you were to have another Pull Request in the same repository, you should create a new branch before making your changes, and push to that branch. You can click [here](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) for more details. However, if you only plan on having a Pull Request for your blog, you need not create a new branch.
+
+After pushing, go to the GitHub page of your forked repository and click _New Pull Request_. After that, describe your changes and you should be good to go!
+
+## Blog Post
+
+You MUST create your post under the [`_posts`](https://github.com/jboss-outreach/blog.jboss-outreach.org/tree/master/_posts) directory.
 
 *Please make sure that you follow the specified format shown below in your post*
 
@@ -23,7 +42,7 @@ File name: `YYYY-MM-DD-post-title.md`
 
 For example, `2018-01-10-updating-readme.md` would be a valid file name.
 
-Inside the file itself, before writing your blog, paste in the following snippet and fill in all the fields appropriately. Make sure that you add a space ` `   right before you add your information.
+Inside the file itself, before writing your blog, paste in the following snippet and fill in all the fields appropriately. Make sure that you add a space `< >` right before you add your information.
 
 ```
 ---
